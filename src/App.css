@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background: yellowgreen;
   min-height: 100vh;
 }
 
@@ -21,7 +21,7 @@ body {
 
 .app-header {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 40px 20px;
 }
 

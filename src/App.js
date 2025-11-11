@@ -54,34 +54,36 @@ function App() {
       </header>
 
       <div className="container text-white">{/** controls*/}
-        <h2>Time Controls</h2>
+        <h2 className='text-center text-dark'>Time Controls</h2>
         <div className="row">{/** control-group*/}
-          <div className="col-xl">{/** control-section*/}
+          <div className="col-xl-4">{/** control-section*/}
             <label>Hours</label>
-            <div className="col-xl-4 btn btn-primary">{/** button-group*/}
-              <button onClick={() => adjustTime('hours', -1)}>-1h</button>
-              <button onClick={() => adjustTime('hours', 1)}>+1h</button>
+            <div className="row">{/** button-group*/}
+              <div className="col-xl-2  m-3 p-3">
+                <button className='btn btn-primary m-3 ' onClick={() => adjustTime('hours', -1)}>-1h</button>
+              <button className='btn btn-primary m-3 ' onClick={() => adjustTime('hours', 1)}>+1h</button></div>{/** button-group*/}
+              
             </div>
           </div>
           
           <div className="row">{/** control-section*/}
             <label>Minutes</label>
-            <div className="col-xl-4 btn btn-primary">{/** button-group*/}
-              <button onClick={() => adjustTime('minutes', -1)}>-1m</button>
-              <button onClick={() => adjustTime('minutes', 1)}>+1m</button>
+            <div className="col-xl-2  m-3 p-3">{/** button-group*/}
+              <button className='btn btn-primary m-2 p-2' onClick={() => adjustTime('minutes', -1)}>-1m</button>
+              <button className='btn btn-primary m-2 p-2' onClick={() => adjustTime('minutes', 1)}>+1m</button>
             </div>
           </div>
           
           <div className="row">{/** control-section*/}
             <label>Seconds</label>
-            <div className="col-xl-4 btn btn-primary ">{/** button-group*/}
-              <button onClick={() => adjustTime('seconds', -10)}>-10s</button>
-              <button onClick={() => adjustTime('seconds', 10)}>+10s</button>
+            <div className="col-xl-2  m-3 p-3">{/** button-group*/}
+              <button className='btn btn-primary m-2 p-2' onClick={() => adjustTime('seconds', -10)}>-10s</button>
+              <button className='btn btn-primary m2 p-2' onClick={() => adjustTime('seconds', 10)}>+10s</button>
             </div>
           </div>
           
-          <div className="col-xl">{/** control-section*/}
-            <button className="col-xl-4 btn btn-primary " onClick={resetTime}>Reset to Now</button>{/** reset-button*/}
+          <div className="row">{/** control-section*/}
+            <button className="col-xl-2 btn btn-success m-3 p-3" onClick={resetTime}>Reset to Now</button>{/** reset-button*/}
           </div>
         </div>
       </div>
